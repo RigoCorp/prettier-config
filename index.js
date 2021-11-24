@@ -7,7 +7,12 @@ module.exports = {
 	/*
 	 * Specify the line length that the printer will wrap on.
 	 */
-	printWidth: 100,
+	printWidth: 120,
+
+	/*
+	 * Number of spaces per indentation-level.
+	 */
+	tabWidth: 4,
 
 	/*
 	 * Indent lines with tabs instead of spaces.
@@ -66,6 +71,18 @@ module.exports = {
 		 */
 		{
 			files: '**/*.md',
+			options: {
+				requirePragma: true,
+			},
+		},
+
+		/*
+		 * Format YAML files only if there's a pragma explicitely asking to.
+		 *
+		 * This plugin generates buggy lists which are not aligned to tab width.
+		 */
+		{
+			files: '**/*.{yml,yaml}',
 			options: {
 				requirePragma: true,
 			},
