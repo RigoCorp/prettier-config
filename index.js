@@ -52,14 +52,23 @@ module.exports = {
 	/*
 	 * Always use Linux EOL.
 	 */
-	endOfLine: "lf",
+	endOfLine: 'lf',
 
 	/*
-	 * Overrides for some files
+	 * Overrides
 	 */
 	overrides: [
-	{
-		files: "*.md",
-		excludeFiles: "*.md"
-	}]
+		/*
+		 * Format Markdown files only if there's a pragma explicitely asking to.
+		 *
+		 * The reason is that, as of 2.4.1, Prettier replaces headers with ASX ones, which are
+		 * harder to read.
+		 */
+		{
+			files: '**/*.md',
+			options: {
+				requirePragma: true,
+			},
+		},
+	],
 };

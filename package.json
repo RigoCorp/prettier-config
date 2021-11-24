@@ -2,22 +2,29 @@
 	"name": "@rigocorp/prettier-config",
 	"version": "1.0.0",
 	"description": "Rigoberto Corporation's Prettier configuration",
-	"main": "index.js",
+	"homepage": "https://github.com/RigoCorp/prettier-config#readme",
+	"bugs": {
+		"url": "https://github.com/RigoCorp/prettier-config/issues"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+ssh://git@github.com/RigoCorp/prettier-config.git"
 	},
-	"author": "Rigoberto Corporation",
 	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/RigoCorp/prettier-config/issues"
+	"author": "Rigoberto Corporation",
+	"main": "index.js",
+	"scripts": {
+		"prepare": "husky install",
+		"prettier": "npx prettier --write .",
+		"test": "npm run-script test-prettier",
+		"test-prettier": "npx prettier --check ."
 	},
-	"homepage": "https://github.com/RigoCorp/prettier-config#readme",
+	"prettier": "./index.js",
+	"devDependencies": {
+		"husky": "^7.0.0",
+		"prettier": "~2.4.1"
+	},
 	"peerDependencies": {
 		"prettier": "~2.4.1"
-	},
-	"devDependencies": {
-		"prettier": "~2.4.1"
-	},
-	"prettier": "./index.js"
+	}
 }
