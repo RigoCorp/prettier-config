@@ -6,8 +6,11 @@
 module.exports = {
 	/*
 	 * Specify the line length that the printer will wrap on.
+	 *
+	 * According to the documentation, it is not the hard upper allowed line length limit. It is
+	 * a way to say to Prettier roughly how long you’d like lines to be.
 	 */
-	printWidth: 120,
+	printWidth: 100,
 
 	/*
 	 * Number of spaces per indentation-level.
