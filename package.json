@@ -1,0 +1,23 @@
+{
+	"name": "@rigocorp/prettier-config",
+	"version": "1.0.0",
+	"description": "Rigoberto Corporation's Prettier configuration",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/RigoCorp/prettier-config.git"
+	},
+	"author": "Rigoberto Corporation",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/RigoCorp/prettier-config/issues"
+	},
+	"homepage": "https://github.com/RigoCorp/prettier-config#readme",
+	"peerDependencies": {
+		"prettier": "~2.4.1"
+	},
+	"devDependencies": {
+		"prettier": "~2.4.1"
+	},
+	"prettier": "./index.js"
+}
