@@ -25,10 +25,10 @@
 	"prettier": "./index.js",
 	"devDependencies": {
 		"husky": "^7.0.0",
-		"prettier": "~2.4.1",
+		"prettier": "2.5.0",
 		"pretty-quick": "^3.1.2"
 	},
 	"peerDependencies": {
-		"prettier": "~2.4.1"
+		"prettier": "2.5.0"
 	}
 }
