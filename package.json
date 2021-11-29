@@ -1,6 +1,6 @@
 {
 	"name": "@rigocorp/prettier-config",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Rigoberto Corporation's Prettier configuration",
 	"homepage": "https://github.com/RigoCorp/prettier-config#readme",
 	"bugs": {
