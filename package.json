@@ -29,6 +29,6 @@
 		"pretty-quick": "^3.1.2"
 	},
 	"peerDependencies": {
-		"prettier": "2.5.1"
+		"prettier": "^2.5.1"
 	}
 }
