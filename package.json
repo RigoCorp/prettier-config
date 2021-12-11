@@ -1,6 +1,6 @@
 {
 	"name": "@rigocorp/prettier-config",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Rigoberto Corporation's Prettier configuration",
 	"homepage": "https://github.com/RigoCorp/prettier-config#readme",
 	"bugs": {
@@ -25,10 +25,10 @@
 	"prettier": "./index.js",
 	"devDependencies": {
 		"husky": "^7.0.0",
-		"prettier": "2.5.0",
+		"prettier": "2.5.1",
 		"pretty-quick": "^3.1.2"
 	},
 	"peerDependencies": {
-		"prettier": "2.5.0"
+		"prettier": "2.5.1"
 	}
 }
