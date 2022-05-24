@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 Rigoberto Corporation
+ * Copyright 2022 Rigoberto Corporation
  * SPDX-License-Identifier: MIT
  */
 
@@ -58,27 +58,29 @@ module.exports = {
 	arrowParens: 'always',
 
 	/*
+	 * Enable prose wrapping for Markdown files.
+	 */
+	proseWrap: 'always',
+
+	/*
 	 * Always use Linux EOL.
 	 */
 	endOfLine: 'lf',
 
 	/*
+	 * Automatically format embedded languages.
+	 */
+	embeddedLanguageFormatting: 'auto',
+
+	/*
+	 * Do not put one attribute per line in HTML, Vue and JSX.
+	 */
+	singleAttributePerLine: false,
+
+	/*
 	 * Overrides
 	 */
 	overrides: [
-		/*
-		 * Format Markdown files only if there's a pragma explicitely asking to.
-		 *
-		 * The reason is that, as of 2.4.1, Prettier replaces headers with ASX ones, which are
-		 * harder to read.
-		 */
-		{
-			files: '**/*.md',
-			options: {
-				requirePragma: true,
-			},
-		},
-
 		/*
 		 * Format YAML files only if there's a pragma explicitely asking to.
 		 *
