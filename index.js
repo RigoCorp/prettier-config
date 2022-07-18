@@ -63,6 +63,11 @@ module.exports = {
 	proseWrap: 'always',
 
 	/*
+	 * Disable insertion of whitespaces where it may cause a change in the rendered output.
+	 */
+	htmlWhitespaceSensitivity: 'css',
+
+	/*
 	 * Always use Linux EOL.
 	 */
 	endOfLine: 'lf',
