@@ -65,7 +65,7 @@ module.exports = {
 	/*
 	 * Disable insertion of whitespaces where it may cause a change in the rendered output.
 	 */
-	htmlWhitespaceSensitivity: 'css',
+	htmlWhitespaceSensitivity: 'strict',
 
 	/*
 	 * Always use Linux EOL.
